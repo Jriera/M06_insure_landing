@@ -4,17 +4,26 @@
 /* violet light-gray */
 /* dark violet */
 body {
-  --bs-body-font-family:'Karla', sans-serif;
+  --bs-body-font-family: "Karla", sans-serif;
   position: relative; }
 
 #hero {
   position: relative; }
 
-h1, .h1, h4, .h4 {
-  font-family: 'DM Serif Display', serif; }
+h1, .h1,
+h4,
+.h4 {
+  font-family: "DM Serif Display", serif; }
+
+.we-work {
+  position: relative;
+  overflow: hidden; }
 
 .card img {
   width: 80px; }
+
+section {
+  position: relative; }
 
 footer {
   font-variant: small-caps; }
@@ -26,16 +35,21 @@ footer {
     max-height: 530px; }
   #pattern-right-desktop {
     width: 32%;
+    height: 100%;
     position: absolute;
-    top: -20%;
-    right: 0%;
+    top: -13%;
+    right: -2%;
     z-index: 1; }
+  #pattern-right-mobile {
+    display: none; }
   #pattern-left-desktop {
     width: 10%;
     position: absolute;
-    bottom: -44%;
+    bottom: -43%;
     left: 0%;
     z-index: 1; }
+  #pattern-left-mobile {
+    display: none; }
   #hero-content {
     transform: translateY(30px); }
   hr {
@@ -56,15 +70,27 @@ footer {
   #intro-image {
     max-height: 595px;
     max-width: 495px; }
-  .we-work {
-    position: relative;
-    overflow: hidden; }
+  #pattern-we-work-desktop {
+    position: absolute;
+    right: -1%;
+    height: 100%;
+    width: 45%; }
+  #pattern-we-work-mobile {
+    display: none; }
   .we-work button {
     position: relative;
     z-index: 3; }
   .logo {
     height: 18px;
     width: 111px; }
+  #pattern-footer-desktop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 30%;
+    height: 65%; }
+  #pattern-footer-mobile {
+    display: none; }
   .socials img:hover {
     filter: brightness(0) saturate(100%) invert(8%) sepia(2%) saturate(6510%) hue-rotate(227deg) brightness(96%) contrast(81%) !important;
     cursor: pointer; }
@@ -72,10 +98,15 @@ footer {
     text-decoration: underline;
     cursor: pointer; } }
 
+/* mobile version media display */
 @media only screen and (max-width: 400px) {
   #pattern-right-desktop {
     display: none; }
   #pattern-left-desktop {
+    display: none; }
+  #pattern-we-work-desktop {
+    display: none; }
+  #pattern-footer-desktop {
     display: none; }
   #hero-content {
     transform: unset; }
@@ -84,7 +115,27 @@ footer {
     height: 451px; }
   .logo {
     width: 112px;
-    height: 18px; } }
+    height: 18px; }
+  #pattern-left-mobile {
+    position: absolute;
+    top: 451px;
+    left: 0%; }
+  #pattern-right-mobile {
+    position: absolute;
+    bottom: -18%;
+    right: 0%; }
+  #pattern-we-work-mobile {
+    position: absolute;
+    right: -3%;
+    top: -10%;
+    width: 65%;
+    height: 100%; }
+  #pattern-footer-mobile {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 13%;
+    width: 100%; } }
 
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
@@ -200,10 +251,14 @@ h3, .h3 {
     h3, .h3 {
       font-size: 1.75rem; } }
 
-h4, .h4 {
+
+h4,
+.h4 {
   font-size: calc(1.275rem + 0.3vw); }
   @media (min-width: 1200px) {
-    h4, .h4 {
+    
+    h4,
+    .h4 {
       font-size: 1.5rem; } }
 
 h5, .h5 {
