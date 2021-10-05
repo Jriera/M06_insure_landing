@@ -69,7 +69,10 @@ footer {
     color: #2b272f; }
   .main-nav a:focus {
     background-color: #2b272f;
-    color: white; }
+    color: white !important; }
+  .active {
+    color: #837d87 !important;
+    border: 2px solid #2b272f; }
   #intro-image {
     max-height: 595px;
     max-width: 495px; }
