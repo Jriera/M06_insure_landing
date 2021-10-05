@@ -8,10 +8,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/custom.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
     rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
   <title>Frontend Mentor | Insure landing page</title>
 
@@ -20,18 +22,51 @@
 
 <body>
 
-  <div class="main-nav bg-primary">
-    <div class="d-flex justify-content-between p-3 container ">
+  <!-- <div class="main-nav bg-primary">
+    <div class="d-lg-flex justify-content-lg-between p-3 container navbar-expand-lg">
       
-      <img class="logo" src="../images/logo.svg" alt="">
-      <nav class="nav">
-        <li class="nav-item me-3"><a href="http://" class="text-decoration-none p-3">How we work</a></li>
-        <li class="nav-item me-3"><a href="http://" class="text-decoration-none p-3">Blog</a></li>
-        <li class="nav-item me-3"><a href="http://" class="text-decoration-none p-3">Account</a></li>
-        <li class="nav-item me-3"><a href="http://" class="text-decoration-none p-3">View plans</a></li>
+      <a class="navbar-brand" href="#"><img class="logo" src="../images/logo.svg" alt=""></a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="#toggleMobileMenu" aria-expanded="false">
+        <span class="navbar-light-toggler-icon"><svg viewBox="0 0 100 50" width="40" height="40">
+          <rect width="80" height="10" rx="8"></rect>
+          <rect y="20" width="80" height="10" rx="8"></rect>
+          <rect y="40" width="80" height="10" rx="8"></rect>
+      </svg></span>
+        
+          
+      </button>
+      <nav class="nav collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav ms-auto ms-0 menu">
+          <li><a href="http://" class="text-decoration-none nav-link">How we work</a></li>
+          <li><a href="http://" class="text-decoration-none nav-link">Blog</a></li>
+          <li><a href="http://" class="text-decoration-none nav-link">Account</a></li>
+          <li><a href="http://" class="text-decoration-none nav-link">View plans</a></li>
+        </ul>
       </nav>
-      <img id="hamburger" src="images/icon-hamburger.svg" alt="">
+      
     </div>
+  </div> -->
+
+  <div class=" main-nav">
+    <nav class=" container navbar navbar-expand-md navbar-light p-0 p-sm-3">
+      <a href="#" class="navbar-brand">
+        <img class="ps-3 p-sm-0" src="images/logo.svg" alt="insure-logo" width="111" height="18"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+        aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse small-menu" id="toggleMobileMenu"> 
+        <ul class="navbar-nav ms-auto text-center pt-sm-0 pt-5">
+          <li><a href="#" class="nav-link">How we Work</a></li>
+          <li><a href="#" class="nav-link">Blog</a></li>
+          <li><a href="#" class="nav-link">Account</a></li>
+          <li><a href="#" class="nav-link">View Plans</a></li>
+          <img id="pattern-mobile-nav" src="images/bg-pattern-mobile-nav.svg" alt="">
+        </ul>
+      </div>
+      
+    </nav>
   </div>
  
   <div class="bg-info container-fluid pt-lg-5 p-0" id="hero">
