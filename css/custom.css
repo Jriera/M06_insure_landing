@@ -29,7 +29,7 @@ footer {
   font-variant: small-caps; }
 
 /* desktop specific styles */
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 501px) {
   #hamburger {
     display: none; }
   #hero {
