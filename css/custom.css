@@ -102,7 +102,7 @@ footer {
     cursor: pointer; } }
 
 /* mobile version media display */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   #pattern-right-desktop {
     display: none; }
   #pattern-left-desktop {
